@@ -1,38 +1,407 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-buffer { margin-top:40px; }
+
+
+
+/*  Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+  .logo{
+    margin-left: 135px;
+    margin-right:70px ;
+    }
+    .nav-links{
+    font-family: Poppins-Medium;
+    font-size: 14px;
+    color: #3A7CD5;
+    letter-spacing: 0.23px;
+    margin-left: 115px;
+    }
+
+    .btnsignin{
+      background: #FFFFFF;
+      border: 1px solid #3A7CD5;
+      border-radius: 5px;
+      border-radius: 5px;
+    }
+    
+    .searchbar{
+      margin-left: 540px;
+    }
+
+    .colorfuldiv{
+      background-image: linear-gradient(180deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+
+    .whitediv{
+      background-image: linear-gradient(180deg, white 0%, white 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+
+    .third-div{
+      background: #EFF3F6;
+      size: 1440px;
+      height: 484px;
+    }
+
+    .fourth-div{
+      background-image: linear-gradient(180deg, white 0%, white 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+    .fourth-div-p-description{
+      font-family: Poppins-Light;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .bodyCard-fourth-div{
+      background-image: linear-gradient(180deg, #3A7BD5 33%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+    .bodyCardTitle-fourth-div{
+      font-family: Poppins-Medium;  
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .bodyCardDescription-fourth-div{
+      font-family: Poppins-Regular;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .card-fourth-div{
+      width: 180px;
+    }
+
+    .third-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+    .teamImg{
+      margin-bottom: 66px;
+      width: 360px;
+    }
+
+    .second-div-h3-title{
+      font-family: Poppins-Medium;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .second-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .second-div-h1-title{
+      font-family: Poppins-Regular;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .fifth-div-h1-title{
+      font-family: Poppins-SemiBoldItalic;
+      font-size: 34px;
+      color: #3A7CD5;
+      letter-spacing: 0;
+    }
+
+    .ptext{
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+    .h1text{
+      font-family: Poppins-Regular;
+      font-size: 38px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .registerFormDiv{
+      background: #FFFFFF;
+      border: 1px solid #18A0FB;
+    }
+    
+    .registerFormInputs{
+      background: #EFF3F6;
+      border-radius: 6px;
+      border-radius: 6px;
+    }
+
+    .register-title{
+      margin-bottom:20px;
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+
+    .btnColorful{
+      background-image: linear-gradient(90deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+      border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    .fifth-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .fifth-div-h1-title{
+      font-family: Poppins-SemiBoldItalic;
+      font-size: 34px;
+      color: #3A7CD5;
+      letter-spacing: 0;
+    }
+
+    .robitBold{
+      font-family: Poppins-SemiBoldItalic;
+      font-size: 24px;
+      color: rgb(101, 101, 241);
+      letter-spacing: 0;
+      line-height: 48px;
+    }
+
+    .fifth-div{
+      background: #EFF3F6;
+      size: 1440px;
+      height: 196px;
+    }
+
+    .btnfreeRegisterColorful{
+      background-image: linear-gradient(90deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+      border-radius: 5px;
+      border-radius: 5px;
+      width: 120px;
+      height: 44px;
+      margin-top: 60px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*  Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*  Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
 
-.App-link {
-  color: #61dafb;
-}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+  .logo{
+    margin-left: 135px;
+    margin-right:70px ;
+    }
+    .nav-links{
+    font-family: Poppins-Medium;
+    font-size: 14px;
+    color: #3A7CD5;
+    letter-spacing: 0.23px;
+    margin-left: 115px;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .btnsignin{
+      background: #FFFFFF;
+      border: 1px solid #3A7CD5;
+      border-radius: 5px;
+      border-radius: 5px;
+    }
+    
+    .searchbar{
+      margin-left: 540px;
+    }
+
+    .colorfuldiv{
+      background-image: linear-gradient(180deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+
+    .whitediv{
+      background-image: linear-gradient(180deg, white 0%, white 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+
+    .third-div{
+      background: #EFF3F6;
+      size: 1440px;
+      height: 484px;
+    }
+
+    .fifth-div{
+      background: #EFF3F6;
+      size: 1440px;
+      height: 196px;
+    }
+
+    .fourth-div{
+      background-image: linear-gradient(180deg, white 0%, white 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+    .fourth-div-p-description{
+      font-family: Poppins-Light;
+      font-size: 28px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .bodyCard-fourth-div{
+      background-image: linear-gradient(180deg, #3A7BD5 33%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+    .bodyCardTitle-fourth-div{
+      font-family: Poppins-Medium;  
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .bodyCardDescription-fourth-div{
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .card-fourth-div{
+      width: 346px;
+    }
+
+    .third-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 22px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .fifth-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .teamImg{
+      margin-bottom: 66px;
+      width: 566px;
+      
+    }
+
+    .second-div-h3-title{
+      font-family: Poppins-Medium;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .second-div-p-description{
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .second-div-h1-title{
+      font-family: Poppins-Regular;
+      font-size: 32px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .ptext{
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+    .h1text{
+      font-family: Poppins-Regular;
+      font-size: 38px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+
+    .registerFormDiv{
+      background: #FFFFFF;
+      border: 1px solid #18A0FB;
+    }
+    
+    .registerFormInputs{
+      background: #EFF3F6;
+      border-radius: 6px;
+      border-radius: 6px;
+    }
+
+    .register-title{
+      margin-bottom:20px;
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+
+    .btnColorful{
+      background-image: linear-gradient(90deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+      border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    .robitBold{
+      font-family: Poppins-SemiBoldItalic;
+      font-size: 32px;
+      color: rgb(101, 101, 241);
+      letter-spacing: 0;
+      line-height: 48px;
+    }
+
+
+
+    .btnfreeRegisterColorful{
+      background-image: linear-gradient(90deg, #3A7BD5 0%, #00D2FF 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+      border-radius: 5px;
+      border-radius: 5px;
+      width: 244px;
+      height: 56px;
+      margin-top: 55px;
+    }
+
+    .footer-div{
+      background-image: linear-gradient(180deg, white 0%, white 100%);
+      box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    }
+
+    .footer-menu{
+      font-family: Poppins-SemiBold;
+      font-size: 11px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    .hrline{
+      background: rgba(0,0,0,0.50);
+    }
+
+   
+ }
