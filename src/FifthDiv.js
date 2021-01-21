@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap'
+import {Row, Col, Jumbotron, Button } from 'react-bootstrap'
 
 
 
